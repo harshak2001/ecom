@@ -16,6 +16,7 @@ const {
   getAllOrdersController,
   orderStatusController,
 } = require("../controllers/authController");
+
 const { loginController } = require("../controllers/loginController");
 const { requireSignIn, isAdmin } = require("../middlewares/authMiddleware");
 router.post("/register", registerController);
