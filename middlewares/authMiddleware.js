@@ -7,6 +7,7 @@ exports.requireSignIn = async (req, res, next) => {
       req.headers.authorization,
       process.env.JWT_SECRET
     );
+    // sac
     req.user = decode;
     next();
   } catch (error) {
